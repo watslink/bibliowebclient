@@ -21,11 +21,6 @@
                             Vous êtes deconnecté.
                         </div>
                     </c:if>
-                    <c:if test="${param.inscrit != null}">
-                        <div class="alert alert-success">
-                            Inscription réussie. Veuillez-vous identifiez.
-                        </div>
-                    </c:if>
                     <h3 class="panel-title">Connection: </h3>
                 </div>
                 <div class="panel-body">
