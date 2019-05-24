@@ -25,12 +25,13 @@
             <tr class="row">
                 <td class="col-xs-3">${borrowing.book.title}</td>
                 <td class="col-xs-5">${borrowing.book.author}</td>
-                <td class="col-xs-5">${borrowing.returnDate}</td>
+                <td class="col-xs-5"><fmt:formatDate value="${borrowing.returnDate}" pattern="dd/MM/yyyy"/></td>
                 <td class="col-xs-4">
-                    <c:if test="${!borrowing.extend}">
-                        <button class="btn btn-primary" href="${pageContext.request.contextPath}/extend?borrowing_id=${borrowing.borrowing_id}">Prolonger</button>
+                    <c:if test="${!borrowing.extended}">
+                        <a href="${pageContext.request.contextPath}/extend?borrowingId=${borrowing.borrowingId}"
+                           class="btn btn-primary">Prolonger</a>
                     </c:if>
-                    <c:if test="${borrowing.extend}">
+                    <c:if test="${borrowing.extended}">
                         <p>Déja prolongé</p>
                     </c:if>
                 </td>

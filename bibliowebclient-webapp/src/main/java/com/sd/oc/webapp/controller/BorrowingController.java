@@ -27,8 +27,8 @@ public class BorrowingController {
     }
 
     @GetMapping("/extend")
-    public String extendBorrowing(@RequestParam int borrowing_id){
-        borrowingServiceAPI.extendBorrowing(borrowing_id);
+    public String extendBorrowing(@RequestParam int borrowingId){
+        borrowingServiceAPI.extendBorrowing(borrowingId);
         return "redirect:/borrowings";
     }
 }

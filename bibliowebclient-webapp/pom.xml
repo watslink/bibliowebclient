@@ -85,11 +85,6 @@
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-taglibs</artifactId>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.webjars/bootstrap-slider -->
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>bootstrap-slider</artifactId>
-        </dependency>
         <!-- https://mvnrepository.com/artifact/org.webjars/datatables -->
         <dependency>
             <groupId>org.webjars</groupId>
