@@ -25,7 +25,7 @@
             <tr class="row">
                 <td class="col-xs-3">${borrowing.book.title}</td>
                 <td class="col-xs-5">${borrowing.book.author}</td>
-                <td class="col-xs-5"><fmt:formatDate value="${borrowing.returnDate}" pattern="dd/MM/yyyy"/></td>
+                <td class="col-xs-5">${borrowing.returnDate}</td>
                 <td class="col-xs-4">
                     <c:if test="${!borrowing.extended}">
                         <a href="${pageContext.request.contextPath}/extend?borrowingId=${borrowing.borrowingId}"
