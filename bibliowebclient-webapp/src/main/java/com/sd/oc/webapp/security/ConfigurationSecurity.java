@@ -40,6 +40,7 @@ public class ConfigurationSecurity extends WebSecurityConfigurerAdapter {
     public PasswordEncoder encoder() {
         return new BCryptPasswordEncoder(11);
     }
+
     @Override
     public void configure(WebSecurity web) {
         web

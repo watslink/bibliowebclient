@@ -7,8 +7,8 @@
 <%@include file="include/header.jsp" %>
 <%@include file="include/menu.jsp" %>
 <div class="container">
-    <h2 class="accueil">Bonjour ${utilisateurConnecte.pseudo}</h2>
-    <p class="accueil"><strong>Bienvenue sur liste de la bibliothèque de votre ville</strong></p>
+    <h2 class="accueil">Bonjour ${username}</h2>
+    <p class="accueil"><strong>Bienvenue sur le site de la bibliothèque de votre ville</strong></p>
 </div>
 <%@include file="include/footer.jsp" %>
 </body>
