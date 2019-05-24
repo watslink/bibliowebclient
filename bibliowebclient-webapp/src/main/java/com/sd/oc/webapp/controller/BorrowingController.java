@@ -8,6 +8,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class BorrowingController {
@@ -23,6 +24,11 @@ public class BorrowingController {
         User user= userServiceAPI.findUserByUsername(SecurityContextHolder.getContext().getAuthentication().getName());
         model.addAttribute("listBorrowings",borrowingServiceAPI.findAllBorrowingOfUser(user.getUserId()));
         return "borrowings";
+    }
 
+    @GetMapping("/extend")
+    public String extendBorrowing(@RequestParam int borrowing_id){
+        borrowingServiceAPI.extendBorrowing(borrowing_id);
+        return "redirect:/borrowings";
     }
 }

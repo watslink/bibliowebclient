@@ -28,7 +28,7 @@
                 <td class="col-xs-5">${borrowing.returnDate}</td>
                 <td class="col-xs-4">
                     <c:if test="${!borrowing.extend}">
-                        <button class="btn btn-primary" href="${pageContext.request.contextPath}/extend">Prolonger</button>
+                        <button class="btn btn-primary" href="${pageContext.request.contextPath}/extend?borrowing_id=${borrowing.borrowing_id}">Prolonger</button>
                     </c:if>
                     <c:if test="${borrowing.extend}">
                         <p>Déja prolongé</p>
