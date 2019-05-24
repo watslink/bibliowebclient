@@ -1,0 +1,73 @@
+
+.marginForm {
+    margin-top: 30px;
+}
+
+.headerBand {
+    background: url("../images/headerBackground.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.jumbotron {
+    margin-bottom: 0;
+    padding: 0.5em 0.6em;
+}
+
+.jumbotron h1 {
+    text-align: center;
+    font-family: Rockwell, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 2em;
+}
+
+.navbar {
+    background-color: #413c11;
+    margin-bottom: 0;
+    border-radius: 5px;
+
+}
+
+.glyphicon-user {
+    color: whitesmoke;
+}
+
+.accueil {
+    text-align: center;
+    margin: 20px;
+}
+
+
+table {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #4995ba;
+    size: 2em;
+}
+
+h4 {
+    text-align: center;
+}
+
+
+.btn {
+    margin: 1px;
+}
+
+.paddingleft {
+    padding-left: 30px;
+}
+
+
+.navbar-inverse .navbar-brand {
+    font-family: "Cooper Black", Tahoma, sans-serif;
+    color: #d18900;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    font-family: "Cooper Black", Tahoma, sans-serif;
+    color: #d18900;
+}
+
