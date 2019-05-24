@@ -84,12 +84,23 @@
           <artifactId>spring-security-core</artifactId>
           <version>5.1.5.RELEASE</version>
         </dependency>
-
         <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-crypto -->
         <dependency>
           <groupId>org.springframework.security</groupId>
           <artifactId>spring-security-crypto</artifactId>
           <version>5.1.5.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
+        <dependency>
+          <groupId>org.springframework.security</groupId>
+          <artifactId>spring-security-config</artifactId>
+          <version>5.1.2.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs -->
+        <dependency>
+          <groupId>org.springframework.security</groupId>
+          <artifactId>spring-security-taglibs</artifactId>
+          <version>5.1.4.RELEASE</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
@@ -100,6 +111,61 @@
           <scope>provided</scope>
         </dependency>
 
+          <!-- https://mvnrepository.com/artifact/javax.servlet/jsp-api -->
+          <dependency>
+              <groupId>javax.servlet</groupId>
+              <artifactId>jsp-api</artifactId>
+              <version>2.0</version>
+          </dependency>
+          <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+          <dependency>
+              <groupId>javax.servlet</groupId>
+              <artifactId>jstl</artifactId>
+              <version>1.2</version>
+          </dependency>
+          <!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
+          <dependency>
+              <groupId>org.webjars</groupId>
+              <artifactId>bootstrap</artifactId>
+              <version>3.3.6</version>
+          </dependency>
+          <!-- https://mvnrepository.com/artifact/org.webjars/jquery -->
+          <dependency>
+              <groupId>org.webjars</groupId>
+              <artifactId>jquery</artifactId>
+              <version>2.1.4</version>
+          </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.webjars/bootstrap-slider -->
+        <dependency>
+          <groupId>org.webjars</groupId>
+          <artifactId>bootstrap-slider</artifactId>
+          <version>10.0.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.webjars/datatables -->
+        <dependency>
+          <groupId>org.webjars</groupId>
+          <artifactId>datatables</artifactId>
+          <version>1.10.19</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.webjars/datatables-fixedheader -->
+        <dependency>
+          <groupId>org.webjars</groupId>
+          <artifactId>datatables-fixedheader</artifactId>
+          <version>3.1.4</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.webjars.bower/datatables.net-responsive -->
+        <dependency>
+          <groupId>org.webjars.bower</groupId>
+          <artifactId>datatables.net-responsive</artifactId>
+          <version>2.2.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.webjars/font-awesome -->
+        <dependency>
+          <groupId>org.webjars</groupId>
+          <artifactId>font-awesome</artifactId>
+          <version>4.7.0</version>
+        </dependency>
       </dependencies>
     </dependencyManagement>
 
