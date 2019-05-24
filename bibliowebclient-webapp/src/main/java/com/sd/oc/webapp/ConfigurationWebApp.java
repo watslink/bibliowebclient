@@ -1,7 +1,8 @@
 package com.sd.oc.webapp;
 
 
-import com.sd.oc.proxies.generated.ConfigurationServiceAPI;
+
+import com.sd.oc.serviceproxy.ConfigurationServiceAPI;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
