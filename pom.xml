@@ -11,6 +11,7 @@
   <modules>
     <module>bibliowebclient-webapp</module>
     <module>bibliowebclient-serviceproxy</module>
+    <module>bibliowebclient-batch</module>
   </modules>
 
   <name>bibliowebclient</name>
@@ -164,7 +165,25 @@
           <artifactId>font-awesome</artifactId>
           <version>4.7.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework.batch/spring-batch-core -->
+        <dependency>
+          <groupId>org.springframework.batch</groupId>
+          <artifactId>spring-batch-core</artifactId>
+          <version>4.1.2.RELEASE</version>
+        </dependency>
+        <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context-support</artifactId>
+          <version>5.1.5.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
+        <dependency>
+          <groupId>com.sun.mail</groupId>
+          <artifactId>javax.mail</artifactId>
+          <version>1.6.2</version>
+        </dependency>
       </dependencies>
+
     </dependencyManagement>
 
     <!-- =============================================================== -->
