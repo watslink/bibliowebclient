@@ -23,7 +23,7 @@ import java.util.Properties;
 @Configuration
 @EnableBatchProcessing
 @EnableScheduling
-@PropertySource("classpath:batch.properties")
+
 @ComponentScan("com.sd.oc.batch")
 @Import(ConfigurationServiceAPI.class)
 public class ConfigurationBatch {
@@ -37,24 +37,6 @@ public class ConfigurationBatch {
     @Autowired
     MailSenderTasklet mailSenderTasklet;
 
-    @Value("${host}")
-    static String host;
-    @Value("${portSender}")
-    static int portSender;
-
-    @Value("${mail.username}")
-    static String mailUsername;
-    @Value("${mail.password}")
-    static String mailPassword;
-
-    @Value("${mail.transport.protocol}")
-    static String protocol;
-    @Value("$mail.smtp.auth}")
-    static Boolean auth;
-    @Value("${mail.smtp.starttls.enable}")
-    static Boolean enable;
-    @Value("${mail.debug}")
-    static Boolean debug;
 
     @Bean
     public Job mailsenderJob(final Step mailsenderStep) {
@@ -73,20 +55,20 @@ public class ConfigurationBatch {
     }
 
     @Bean
-    public static JavaMailSender javaMailSender() {
+    public JavaMailSender javaMailSender(final JavaMailSenderProperties jmsProp) {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-        mailSender.setHost("smtp.gmail.com");
-        mailSender.setPort(587);
 
-        mailSender.setUsername("biblioocsender@gmail.com");
-        mailSender.setPassword("biblioOC1234");
+        mailSender.setPort(587);
+        mailSender.setUsername(jmsProp.getMailUsername());
+        mailSender.setPassword(jmsProp.getMailPassword());
 
         Properties props = mailSender.getJavaMailProperties();
-        props.put("mail.transport.protocol", "smtp" );
-        props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
-        props.put("mail.smtp.auth", true );
-        props.put("mail.smtp.starttls.enable", true);
-        props.put("mail.debug", true);
+        props.put("mail.smtp.host", jmsProp.getHost());
+        props.put("mail.transport.protocol", jmsProp.getProtocol() );
+        props.put("mail.smtp.ssl.trust", jmsProp.getProtocol());
+        props.put("mail.smtp.auth", jmsProp.getAuth() );
+        props.put("mail.smtp.starttls.enable", jmsProp.getEnable());
+        props.put("mail.debug", jmsProp.getDebug());
 
         return mailSender;
     }
