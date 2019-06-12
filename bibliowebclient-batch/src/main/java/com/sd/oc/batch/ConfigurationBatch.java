@@ -65,7 +65,7 @@ public class ConfigurationBatch {
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.smtp.host", jmsProp.getHost());
         props.put("mail.transport.protocol", jmsProp.getProtocol() );
-        props.put("mail.smtp.ssl.trust", jmsProp.getProtocol());
+        props.put("mail.smtp.ssl.trust", jmsProp.getHost());
         props.put("mail.smtp.auth", jmsProp.getAuth() );
         props.put("mail.smtp.starttls.enable", jmsProp.getEnable());
         props.put("mail.debug", jmsProp.getDebug());
