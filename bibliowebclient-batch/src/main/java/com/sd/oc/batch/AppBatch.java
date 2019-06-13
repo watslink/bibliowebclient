@@ -1,4 +1,4 @@
-package com.sd.oc;
+package com.sd.oc.batch;
 
 import com.sd.oc.batch.ConfigurationBatch;
 import com.sd.oc.batch.launchers.MailSenderLauncher;
@@ -10,10 +10,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * Hello world!
  *
  */
-public class App 
+public class AppBatch
 {
     public static void main( String[] args )
     {
         AbstractApplicationContext context = new AnnotationConfigApplicationContext(ConfigurationBatch.class);
+        System.out.println("batch start");
     }
 }

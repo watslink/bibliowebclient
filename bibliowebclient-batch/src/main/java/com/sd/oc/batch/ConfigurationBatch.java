@@ -9,7 +9,6 @@ import org.springframework.batch.core.configuration.annotation.EnableBatchProces
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.*;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
@@ -23,7 +22,6 @@ import java.util.Properties;
 @Configuration
 @EnableBatchProcessing
 @EnableScheduling
-
 @ComponentScan("com.sd.oc.batch")
 @Import(ConfigurationServiceAPI.class)
 public class ConfigurationBatch {
