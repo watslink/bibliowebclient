@@ -23,7 +23,7 @@ public class MailSenderLauncher {
     @Autowired
     JobLauncher jobLauncher;
 
-    @Scheduled(cron = "0 * * * * *")
+    @Scheduled(cron = "* * 6 * * *")
     public void schedule() {
         JobParameters parameters = new JobParametersBuilder()
                 .addLong("currentTime", System.currentTimeMillis())
