@@ -35,7 +35,7 @@ et peuvent être utilisées.
 
 Lancement du batch: executer start.sh dans le dossier bin.
 
-Un mail de relance est envoyé tous les jours à 9h aux utilisateurs n'ayant pas rendu leurs livres dans les délais
+Un mail de relance est envoyé tous les jours à 10h aux utilisateurs n'ayant pas rendu leurs livres dans les délais
 
 
 
